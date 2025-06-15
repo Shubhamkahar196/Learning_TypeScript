@@ -87,14 +87,3 @@ const employee: EmployeeDetails = {
 };
 
 // In this example, the EmployeeDetails type is an intersection of the Person and Employee interfaces. It has all the properties of both interfaces.
-
-// Benefits of Interfaces and Type Aliases
-
-// Using interfaces and type aliases provides several benefits, including:
-
-// - Improved code readability and maintainability
-// - Better error messages and type checking
-// - Increased code safety and reliability
-// - Simplified complex types and improved code reusability
-
-// By using interfaces and type aliases effectively, you can write more robust, maintainable, and scalable TypeScript code.
