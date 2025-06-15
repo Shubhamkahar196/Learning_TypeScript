@@ -27,7 +27,7 @@ const person1: Person = {
 
 // In this example, the person object conforms to the Person interface.
 
-// Extending Interfaces
+// ****** Extending Interfaces
 
 // You can extend interfaces using the extends keyword:
 
@@ -46,7 +46,7 @@ const employee1: Employee = {
 
 // In this example, the Employee interface extends the Person interface and adds two new properties: employeeId and department.
 
-// Type Aliases
+// ***** Type Aliases
 
 // Type aliases are used to give a new name to an existing type. They are useful for simplifying complex types and making them more readable.
 
@@ -60,7 +60,7 @@ const quantity: StringOrNumber = 10;
 
 // In this example, the StringOrNumber type alias represents a type that can be either a string or a number.
 
-// Intersection Types
+// ****** Intersection Types
 
 // Intersection types are used to combine multiple types into a single type. They are useful for creating complex types that have multiple properties and methods.
 
