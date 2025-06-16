@@ -262,3 +262,11 @@ Using interfaces and type aliases provides several benefits, including:
 
 By using interfaces and type aliases effectively, you can write more robust, maintainable, and scalable TypeScript code.
 
+# Classes:
+    - Define the structure and behavior of objects.
+    - Are essentially templates or blueprints.
+    - Can be used to create multiple objects.
+# Objects:
+    - Are instances of classes.
+    - Have their own state (data) and behavior (methods).
+    - Can be manipulated and interacted with.
