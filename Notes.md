@@ -295,3 +295,26 @@ class Person {
   }
 }
 
+# "this" Keyword
+The this keyword is a reference to the current object being used. It's like a pointer that says "I'm talking about myself".
+
+# How it Works
+When you use this inside a class, it refers to the instance of that class. You can use this to access properties and methods of the current object.
+
+# Example
+
+class Person {
+  name: string;
+
+  constructor(name: string) {
+    this.name = name; // "this" refers to the Person object
+  }
+
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+
+let person = new Person("John");
+person.sayHello(); // Output: Hello, my name is John
+
