@@ -270,3 +270,28 @@ By using interfaces and type aliases effectively, you can write more robust, mai
     - Are instances of classes.
     - Have their own state (data) and behavior (methods).
     - Can be manipulated and interacted with.
+
+#    Constructor
+A constructor is a special method in a class that is used to initialize objects when they are created. It has the same name as the class and does not have a return type, not even void.
+
+# Key Characteristics of Constructors
+- Initialization: Constructors are used to initialize objects with default or initial values.
+- Same Name as Class: Constructors have the same name as the class.
+- No Return Type: Constructors do not have a return type, not even void.
+- Called Automatically: Constructors are called automatically when an object is created.
+
+
+Example
+Here's an example of a constructor in TypeScript:
+
+
+class Person {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
