@@ -340,3 +340,16 @@ person.sayHello(); // Output: Hello, my name is John
 - Use access modifiers to control access: Use access modifiers to control access to properties and methods.
 - Default to private: Default to private access modifier for properties and methods unless they need to be accessed from outside the class.
 - Use protected for inheritance: Use protected access modifier for properties and methods that need to be accessed by subclasses.
+
+
+# Getters and Setters Notes
+# Getters
+- Get the value of a property: Getters are used to retrieve the value of a property.
+- *Defined using the get keyword*: Getters are defined using the get keyword followed by the property name.
+- Return a value: Getters return a value, which is typically the value of the underlying property.
+
+# Setters
+- Set the value of a property: Setters are used to update the value of a property.
+- *Defined using the set keyword*: Setters are defined using the set keyword followed by the property name.
+- Take a value as a parameter: Setters take a value as a parameter, which is used to update the underlying property.
+
