@@ -318,3 +318,25 @@ class Person {
 let person = new Person("John");
 person.sayHello(); // Output: Hello, my name is John
 
+# Access Modifiers Notes
+# Public
+- Accessible from anywhere: Can be accessed from within and outside the class.
+- No restrictions: Can be used freely without any limitations.
+
+# Private
+- Accessible only within the class: Can only be accessed from within the class itself.
+- Hidden from outside: Not accessible from outside the class, providing data hiding and encapsulation.
+
+# Protected
+- Accessible within the class and its subclasses: Can be accessed from within the class and its subclasses.
+- Not accessible from outside: Not accessible from outside the class or its subclasses, providing some level of data protection.
+
+# Key Points
+- Use public for: Properties and methods that need to be accessed from outside the class.
+- Use private for: Properties and methods that should be hidden from outside the class.
+- Use protected for: Properties and methods that should be accessible within the class and its subclasses.
+
+# Best Practices
+- Use access modifiers to control access: Use access modifiers to control access to properties and methods.
+- Default to private: Default to private access modifier for properties and methods unless they need to be accessed from outside the class.
+- Use protected for inheritance: Use protected access modifier for properties and methods that need to be accessed by subclasses.
