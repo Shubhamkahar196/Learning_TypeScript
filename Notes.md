@@ -353,3 +353,18 @@ person.sayHello(); // Output: Hello, my name is John
 - *Defined using the set keyword*: Setters are defined using the set keyword followed by the property name.
 - Take a value as a parameter: Setters take a value as a parameter, which is used to update the underlying property.
 
+
+# Abstract Classes:
+
+- An abstract class in TypeScript is a class that cannot be instantiated on its own and is designed to be inherited by other classes.
+- Abstract classes are used to provide a partial implementation of a class, and they can contain both abstract and non-abstract methods.
+- A class that extends an abstract class must implement all the abstract methods.
+
+# Abstract Methods:
+
+- An abstract method in TypeScript is a method declared without an implementation.
+- Abstract methods are used to define a method signature that must be implemented by any class that extends the abstract class.
+- Abstract methods are declared using the abstract keyword.
+
+
+
