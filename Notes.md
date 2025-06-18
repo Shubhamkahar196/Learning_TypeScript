@@ -367,4 +367,89 @@ person.sayHello(); // Output: Hello, my name is John
 - Abstract methods are declared using the abstract keyword.
 
 
+In TypeScript (TS), functions are blocks of code that can be executed multiple times from different parts of a program. They are useful for organizing code, reducing repetition, and improving maintainability.
+
+# Basic Function Syntax
+
+function greet(name: string): void {
+  console.log(`Hello, ${name}!`);
+}
+
+greet('John'); // Output: Hello, John!
+
+
+In this example:
+
+- function is the keyword used to declare a function.
+- greet is the name of the function.
+- name: string is a parameter of type string.
+- : void indicates that the function does not return any value.
+
+# Function Types
+
+TypeScript allows you to define function types, which specify the types of the parameters and the return value. Here's an example:
+
+
+type MathOperation = (a: number, b: number) => number;
+
+const add: MathOperation = (a, b) => a + b;
+const subtract: MathOperation = (a, b) => a - b;
+
+console.log(add(5, 3)); // Output: 8
+console.log(subtract(10, 4)); // Output: 6
+
+
+In this example:
+
+- MathOperation is a function type that takes two number parameters and returns a number.
+- add and subtract are functions that conform to the MathOperation type.
+
+# Optional and Default Parameters
+
+TypeScript allows you to define optional and default parameters in functions. Here's an example:
+
+
+function greet(name: string, age?: number): void {
+  if (age) {
+    console.log(`Hello, ${name}! You are ${age} years old.`);
+  } else {
+    console.log(`Hello, ${name}!`);
+  }
+}
+
+greet('John'); // Output: Hello, John!
+greet('Jane', 30); // Output: Hello, Jane! You are 30 years old.
+
+function greetWithDefault(name: string, greeting: string = 'Hello'): void {
+  console.log(`${greeting}, ${name}!`);
+}
+
+greetWithDefault('John'); // Output: Hello, John!
+greetWithDefault('Jane', 'Hi'); // Output: Hi, Jane!
+
+
+In this example:
+
+- age?: number makes the age parameter optional.
+- greeting: string = 'Hello' sets the default value of the greeting parameter to 'Hello'.
+
+# Rest Parameters
+
+TypeScript allows you to define rest parameters, which allow a function to accept a variable number of arguments. Here's an example:
+
+
+function sum(...numbers: number[]): number {
+  return numbers.reduce((a, b) => a + b, 0);
+}
+
+console.log(sum(1, 2, 3, 4, 5)); // Output: 15
+
+
+In this example:
+
+- ...numbers: number[] defines a rest parameter numbers that is an array of `number`s.
+- The sum function uses the reduce method to calculate the sum of all the numbers in the numbers array.
+
+
+
 

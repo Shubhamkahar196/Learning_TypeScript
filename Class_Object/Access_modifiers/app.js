@@ -31,4 +31,4 @@ person11.sayHello(); // Okay, public method
 // person1.checkAge(); // Error, checkAge is private
 person11.test(); // Okay, public method that calls private method
 let employee112 = new Employee("Jane", 25, "Los Angeles");
-employee.testAddress(); // Okay
+employee112.testAddress(); // Okay
