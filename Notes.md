@@ -517,3 +517,86 @@ By using generics, you can write more flexible and reusable code in TypeScript.
 
 
 
+# Modules in TypeScript/JavaScript
+
+Modules are a way to organize and structure code in a reusable and maintainable manner. They allow you to export specific functions, variables, or classes from one file and import them into another.
+
+# Exporting
+
+To export a module, you use the export keyword. There are two types of exports:
+
+- Named Exports: You can export multiple values from a module using named exports.
+
+```
+```
+// math.ts
+export function add(a: number, b: number): number {
+return a + b;
+}
+
+export function subtract(a: number, b: number): number {
+return a - b;
+}
+
+
+#  **Default Exports**: You can export a single value from a module using the `default` keyword.
+
+    typescript
+// greet.ts
+export default function greet(name: string): string {
+    return Hello, ${name}!;
+}
+
+
+ # Importing*
+
+To import a module, you use the `import` keyword.
+
+- *Importing Named Exports*:
+
+
+
+// main.ts
+import { add, subtract } from './math';
+
+console.log(add(2, 3)); // Outputs: 5
+console.log(subtract(5, 2)); // Outputs: 3
+
+
+#    *Importing Default Exports*:
+
+    typescript
+// main.ts
+import greet from './greet';
+
+console.log(greet('John')); // Outputs: Hello, John!
+
+
+# Benefits:
+
+- Code Organization: Modules help organize code into reusable and maintainable units.
+- Reusability: Modules enable code reusability across different parts of an application.
+- Encapsulation: Modules encapsulate internal implementation details and expose only the necessary interfaces.
+
+Example Use Case:
+
+Suppose you're building a calculator application and want to separate the math operations into a separate module. You can create a math.ts file with named exports for different math functions and import them into your main application file.
+
+
+// math.ts
+export function add(a: number, b: number): number {
+    return a + b;
+}
+
+export function subtract(a: number, b: number): number {
+    return a - b;
+}
+
+// main.ts
+import { add, subtract } from './math';
+
+console.log(add(2, 3)); // Outputs: 5
+console.log(subtract(5, 2)); // Outputs: 3
+
+
+
