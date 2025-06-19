@@ -20,6 +20,7 @@ console.log(strLength);
 
 let someValue: any = "123";
 let numValue: number = parseInt(someValue);
+console.log(numValue);
 
 
 // In this example, someValue is of type any, and we're using the parseInt function to convert it to a number.
