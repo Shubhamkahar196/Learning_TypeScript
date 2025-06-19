@@ -1,6 +1,4 @@
-TypeScript Learning Repository
 
-README.md
 
 TypeScript Learning Repository
 
