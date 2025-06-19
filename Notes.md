@@ -451,5 +451,69 @@ In this example:
 - The sum function uses the reduce method to calculate the sum of all the numbers in the numbers array.
 
 
+# Generics in TypeScript
+
+Generics allow you to create reusable functions, classes, and interfaces that work with multiple data types.
+
+# Why Use Generics?
+
+- Increase code reusability
+- Improve code safety by specifying data types
+- Reduce code duplication
+
+# Generics Examples:
+
+- Generic Functions: Functions that can work with multiple data types.
+
+```
+```
+function identity<T>(arg: T): T {
+return arg;
+}
+
+
+#  **Generic Classes**: Classes that can work with multiple data types.
+
+    typescript
+class Container<T> {
+    private value: T;
+
+    constructor(value: T) {
+        this.value = value;
+    }
+
+    getValue(): T {
+        return this.value;
+    }
+}
+
+
+#  *Generic Interfaces*: Interfaces that can work with multiple data types.
+
+
+
+interface Pair<T, U> {
+first: T;
+second: U;
+}
+
+
+# *Benefits:*
+
+*   *Type Safety*: Generics ensure type safety by specifying the data type.
+*   *Reusability*: Generics enable code reusability by allowing multiple data types.
+
+*Example Usage:*
+
+typescript
+let stringContainer = new Container<string>("Hello");
+console.log(stringContainer.getValue()); // Outputs: Hello
+
+let numberContainer = new Container<number>(123);
+console.log(numberContainer.getValue()); // Outputs: 123
+
+
+By using generics, you can write more flexible and reusable code in TypeScript.
+
 
 
