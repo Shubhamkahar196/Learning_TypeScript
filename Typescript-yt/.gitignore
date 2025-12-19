@@ -1,0 +1,37 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Compiled output
+# Adjust 'dist' to match your project's build output directory (e.g., 'lib', 'build', 'out')
+dist/
+build/
+*.js.map
+*.d.ts
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example # Keep the example file in version control
